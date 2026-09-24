@@ -1,28 +1,27 @@
-# CachingLite
+# SwordDB
 
-CachingLite is an open-source caching and SQLite database built on top of SQLite, written in Rust. It aims to deliver a highly optimized solution that balances memory usage with file reads, combining the full functionality of SQLite with advanced caching in a single library. The project is designed to be highly performant by dynamically managing the trade-off between loading data from memory or files, targeting offline-first applications like desktop and mobile, with plans to eventually support distributed systems.
+## Why this project?
 
-## Vision
-The vision of CachingLite is to provide a seamless, performant caching database that integrates SQLite’s persistence with an optimized caching layer. By offering both caching and SQLite functionalities in one library, it enables developers to leverage:
+I love learning and improving my distributed systems skills by building projects. I think ClickHouse is incredible, so I decided to deepen my understanding by rewriting it in Rust and giving my best to build the best database of this kind that I can.
 
-Dynamic Trade-off Optimization: Intelligent decisions on when to fetch data from memory (for speed) or from files (for persistence).
+SwordDB is a long-term learning project: an opportunity to keep pushing my skills in distributed systems and Rust as the database evolves.
 
-High Performance: A solution that maximizes efficiency and minimizes latency.
+## AI Usage Disclaimer
 
-Ease of Use: A unified interface for caching and database operations.
+AI agents may be used in this project, but all code must be validated and approved by a human engineer who takes responsibility for it. Only humans can be accountable for generated code. **No contribution will be accepted without validation and approval by a responsible human engineer.**
 
-The goal is to create a tool that excels in resource management while retaining all the powerful features of SQLite, making it a go-to choice for applications requiring fast, reliable data access.
+See the [AI usage and human responsibility policy](docs/specs/ai-usage.md).
 
-## Current Status
-CachingLite is in its early stages of development. The current focus is on building a foundational caching layer, similar to Redis, which will later be optimized and integrated with SQLite. This initial step sets the stage for implementing the trade-off mechanisms and performance enhancements that will define the project.
+## What is SwordDB?
 
-## Planned Features
-Unified Caching and SQLite: A single library that combines caching with SQLite’s full feature set, simplifying data management.
+SwordDB is a rewrite of ClickHouse in Rust, aiming for the highest performance I can achieve in an analytical database while following sound engineering practices. Performance is an ambition to validate through benchmarks as the implementation develops.
 
-Optimized Trade-off Management: Algorithms that dynamically decide whether to serve data from an in-memory cache or query the SQLite database, balancing performance and resource usage.
+The project is currently at the documentation and planning stage.
 
-High Performance: Low-latency, high-throughput access tailored for demanding applications.
+## Documentation
 
-Offline-First Focus: Ideal for desktop and mobile apps that need robust data access without network reliance.
+- [Roadmap](docs/roadmap/README.md): planned milestones, priorities, and progress.
+- [Specifications](docs/specs/README.md): all project decisions and business rules.
+- [Agent instructions](docs/agents/README.md): instructions for agents working on the project.
 
-Future Distributed Systems: Plans to scale the solution for high-performance distributed environments.
+All project content must be written in English. Agents must consult the documentation before working on the project and must never create commits directly.
